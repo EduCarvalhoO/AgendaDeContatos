@@ -19,16 +19,13 @@
 private String _stringConexao = "Data Source=(LocalDB)\\MSSQLLocalDB;(...)";
 
 10 - Altere o conteúdo da linha descrita acima, entre as Aspas (") insira o conteudo copiado em Cadeia de Conexão 
-preenchendo com uma barra (\) para que o código consiga interpretar corretamente
+preenchendo com uma barra ("\") para que o código consiga interpretar corretamente
 
 Quando copiar por padrão estará com 1 barra assim:
 DataSource=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\ProjetosC#\TesteAgenda\Banco
 Agenda.mdf;Integrated Security=True;Connect Timeout=30
 
-Para que funcione deve ser inserido mais uma barra em todos os campos ficando
-assim:
-DataSource=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\ProjetosC#\\TesteAgenda\\Ban
-coAgenda.mdf;Integrated Security=True;Connect Timeout=30
+Para que funcione deve ser inserido uma barra adicional para cada barra do link, assim o script poderá ser executado
 
 11 - Verifique a Aba NuGet Packages clicando com o direito no projeto e caso não tenha disponivel instale
 System.Data.SqlClient by Microsoft
